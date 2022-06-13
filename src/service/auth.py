@@ -1,13 +1,10 @@
-from fastapi.security import OAuth2PasswordBearer
 from sqlalchemy.orm import Session
-from fastapi import HTTPException
 from fastapi import Depends
-from starlette import status
+
 
 from src.DTO import tables
 from src.DTO.database import get_session
 from passlib.hash import bcrypt
-import jwt
 
 JWT_SECRET_KEY = "green"
 

@@ -1,10 +1,7 @@
-import io
-import os
 from typing import List
 
 from fastapi import Depends
 from minio import Minio
-from minio.deleteobjects import DeleteObject
 from sqlalchemy.orm import Session
 
 from src.DTO import tables
